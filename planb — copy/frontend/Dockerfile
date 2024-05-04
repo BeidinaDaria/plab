@@ -1,10 +1,10 @@
 FROM node:16-alpine
 
-WORKDIR /app/frontend/
+WORKDIR /code/frontend/
 
-COPY package*.json /app/frontend/
+COPY package*.json /code/frontend/
 RUN npm install
 
-COPY . /app/frontend/
+COPY . /code/frontend/
 
 CMD ["npm", "start"]
